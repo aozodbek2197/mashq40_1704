@@ -1,0 +1,103 @@
+<!-- 1-mashq -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>96-masala</title>
+</head>
+<body>
+
+<p id="t">0</p>
+
+<script>
+let i = 0;
+setInterval(()=>{
+    i++;
+    document.getElementById("t").innerText = i;
+},1000);
+</script>
+
+</body>
+</html>
+<!-- 2-mashq -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>97-masala</title>
+</head>
+<body>
+
+<button onclick="count()">Click</button>
+<p id="c">0</p>
+
+<script>
+let c = 0;
+function count(){
+    c++;
+    document.getElementById("c").innerText = c;
+}
+</script>
+
+</body>
+</html>
+<!-- 3-mashq -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>98-masala</title>
+</head>
+<body>
+
+<p id="p">Matn</p>
+<button onclick="toggle()">Toggle</button>
+
+<script>
+function toggle(){
+    let p = document.getElementById("p");
+    p.style.display = (p.style.display==="none")?"block":"none";
+}
+</script>
+
+</body>
+</html>
+<!-- 4-mashq -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>99-masala</title>
+</head>
+<body>
+
+<input id="i">
+<button onclick="clearInput()">Clear</button>
+
+<script>
+function clearInput(){
+    document.getElementById("i").value = "";
+}
+</script>
+
+</body>
+</html>
+<!-- 5-mashq -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>100-masala</title>
+</head>
+<body>
+
+<input id="task">
+<button onclick="add()">Add</button>
+
+<ul id="list"></ul>
+
+<script>
+function add(){
+    let li = document.createElement("li");
+    li.innerText = document.getElementById("task").value;
+    document.getElementById("list").appendChild(li);
+}
+</script>
+
+</body>
+</html>
